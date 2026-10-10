@@ -20,9 +20,6 @@ def home():
 
 @app.route("/health")
 def health():
-    # A health check endpoint is a very standard thing to have —
-    # CI/CD pipelines and container orchestrators often ping this
-    # to confirm the app actually started correctly.
     return jsonify({"status": "ok"})
 
 
@@ -67,7 +64,4 @@ def update_task(task_id):
 
 
 if __name__ == "__main__":
-    # host="0.0.0.0" is important once this runs inside Docker —
-    # it means "accept connections from outside the container",
-    # not just from localhost inside it.
     app.run(host="0.0.0.0", port=5000, debug=True)
