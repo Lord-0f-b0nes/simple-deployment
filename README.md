@@ -13,13 +13,13 @@ GitHub actions - CI pipeline
 
 ## What the API does
 
-get /health - checking service avtivity 
-get /tasks - lists all tasks 
-post /tasks - add a new task 
-get /tasks/<id> - search for one task
-put /tasks/<id> - update task 
+--get /health - checking service avtivity. 
+--get /tasks - lists all tasks.
+--post /tasks - add a new task. 
+--get /tasks/<id> - search for one task.
+--put /tasks/<id> - update task. 
 
-## Running in yourself (this project runs locally)
+## Running it yourself (this project runs locally)
 
 ```bash
 docker-compose up --build
