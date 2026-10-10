@@ -6,10 +6,10 @@ This project's focus is the DevOps workflow.
 
 ## Stack 
 
-Flask (python) - backend API
-Docker + Docker compose - containerization And orchestration
-Nginx reverse proxy, TLS termination
-GitHub actions - CI pipeline
+--Flask (python) - backend API.
+--Docker + Docker compose - containerization And orchestration.
+--Nginx reverse proxy, TLS termination.
+--GitHub actions - CI pipeline.
 
 ## What the API does
 
