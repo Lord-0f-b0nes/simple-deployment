@@ -2,8 +2,6 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# In-memory "database" — resets every time the app restarts.
-# Good enough for a demo app; not meant for real persistence.
 tasks = [
     {"id": 1, "title": "Learn Docker", "done": False},
     {"id": 2, "title": "Set up CI/CD", "done": False},
