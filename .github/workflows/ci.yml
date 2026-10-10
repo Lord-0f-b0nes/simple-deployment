@@ -7,11 +7,11 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
-      with: 
+    steps:
+       - uses: actions/checkout@v4
+       - uses: actions/setup-python@v5
+     with: 
             python-varsion: '3.11'
-    - run: pip install -r requirements-1.txt
-    - run: pytest test_app.py
-    - run: docker build -t flask-app .
+       - run: pip install -r requirements-1.txt
+       - run: pytest test_app.py
+       - run: docker build -t flask-app .
